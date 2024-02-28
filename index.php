@@ -11,7 +11,7 @@
 
   <body>
     <?php
-        include 'menu.html';
+        include '/menu.html';
     ?> 
 
     <div class="row">
