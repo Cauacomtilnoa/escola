@@ -1,77 +1,131 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Escola</title>
-  </head>
-  <body>
-   
-    <div class="col-12">
-  
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.php">Escola</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Escola</title>
+</head>
+
+<body>
+
+  <div class="col-12">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.php">Escola</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Cadastrar
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="cad_aluno.html">Aluno</a></li>
+                <li><a class="dropdown-item" href="cad_docente.html">Docente</a></li>
+                <li><a class="dropdown-item" href="cad_turma.html">Turma</a></li>
+                <li><a class="dropdown-item" href="cad_curso.html">Curso</a></li>
+
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cadastrar
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="cad_aluno.html">Aluno</a></li>
-                    <li><a class="dropdown-item" href="cad_docente.html">Docente</a></li>
-                    <li><a class="dropdown-item" href="cad_turma.html">Turma</a></li>
-                    <li><a class="dropdown-item" href="cad_curso.html">Curso</a></li>
-
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="cad_matricula.html">Matricula</a></li>
-                  </ul>
-                </li>
-
+                <li><a class="dropdown-item" href="cad_matricula.html">Matricula</a></li>
               </ul>
-            </div>
-          </div>
-        </nav>
+            </li>
 
-
-<div class="container-fluid">
-<div class="row">
-  <div class="col bg-dark">
-    <p class="text-center m-0 p-4 text-white fw-bold display-5">Cadastro Aluno</p>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="row">
-      <div class="col-12">
-        <label for="nomeAluno"> Nome do Aluno: </label>
-        <input type="text" name="nomeAluno" id="nomeAluno">
+          </ul>
+        </div>
       </div>
-      
-      <div class="col-12">
-        <label for="nomeAluno"> Nome do Aluno: </label>
-        <input type="text" name="nomeAluno" id="nomeAluno">
+    </nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-dark">
+          <p class="text-center m-0 p-4 text-white fw-bold display-5">Cadastro Aluno</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+          <img src="../assets/escola1.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-md-6 mt-5">
+          <form action="">
+            <div class="row">
+
+              <div class="col-12">
+                <label for="nomeAluno" class="form-label">Nome do Aluno: </label>
+                <input type="text" name="nomeAluno" id="nomeAluno" class="form-control">
+              </div>
+              <div class="col-12">
+                <label for="emailAluno" class="form-label">Email: </label>
+                <input type="text" name="emailAluno" id="emailAluno" class="form-control">
+              </div>
+
+              <div class="col-6 ">
+                <label for="cpfAluno" class="form-label">Cpf: </label>
+                <input type="text" name="cpfAluno" id="cpfAluno" class="form-control">
+              </div>
+              <div class="col-6 ">
+                <label for="rgAluno" class="form-label">RG: </label>
+                <input type="text" name="rgAluno" id="rgAluno" class="form-control">
+              </div>
+              <div class="col-12 mb-4">
+                <label for="telefoneAluno" class="form-label">Telefone: </label>
+                <input type="text" name="telefoneAluno" id="telefoneAluno" class="form-control">
+              </div>
+              <p class="mb-3">Endereço: </p>
+
+              <div class="col-12">
+                <label for="ruaAluno" class="form-label">Rua: </label>
+                <input type="text" name="ruaAluno" id="ruaAluno" class="form-control">
+              </div>
+              <div class="col-12">
+                <label for="bairroAluno" class="form-label">Bairro: </label>
+                <input type="text" name="bairroAluno" id="bairroAluno" class="form-control">
+              </div>
+              <div class="col-12">
+                <label for="cidadeAluno" class="form-label">Cidade: </label>
+                <input type="text" name="cidadeAluno" id="cidadeAluno" class="form-control">
+              </div>
+
+              <div class="col-6">
+                <label for="estadoAluno" class="form-label">Estado: </label>
+                <input type="text" name="estadoAluno" id="estadoAluno" class="form-control">
+              </div>
+
+              <div class="col-6">
+                <label for="paisAluno" class="form-label">País: </label>
+                <input type="text" name="paisAluno" id="paisAluno" class="form-control">
+              </div>
+
+              <button type="submit" class="btn btn-dark mt-3 w-75 m-auto">Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+</body>
+
 </html>
